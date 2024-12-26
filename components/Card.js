@@ -10,6 +10,10 @@ const images = [
   "/assets/Rectangle.png",
   "/assets/Rectangle193.png",
   "/assets/Rectangle.png",
+  "/assets/Rectangle.png",
+  "/assets/Rectangle193.png",
+  "/assets/Rectangle.png",
+  "/assets/Rectangle.png",
 ];
 
 const Card = () => {
@@ -66,16 +70,33 @@ const Card = () => {
         </div>
 
         {/* Circular Progress Bar and Price */}
-        <div className="absolute bottom-20 mx-8 flex justify-between w-[90%]">
+        {/* Circular Progress Bar and Price */}
+        <div className="absolute bottom-20 left-6 flex justify-between w-[90%]">
           <SquareProgressBar percentage={23} />
-          <div className="flex gap-8 ml-4 text-white">
-            <p className="text-[18px]">£5,000,000 GBP</p>
-            <div>
-              <p className="text-[16px] font-semibold">Sotheby's</p>
-              <p className="text-[10px]">INTERNATIONAL REALTY</p>
+          <div className="flex flex-col">
+            <div className="flex justify-between text-white">
+              <p className="text-[18px]">£5,000,000 GBP</p>
+              <div>
+                <p className="text-[16px] font-semibold">Sotheby's</p>
+                <p className="text-[7px]">INTERNATIONAL REALTY</p>
+              </div>
+            </div>
+
+            {/* Slide Indicators */}
+            <div className="flex justify-center mt-2">
+              {images.map((_, index) => (
+                <span
+                  key={index}
+                  onClick={() => setCurrentImageIndex(index)} // Navigate to the corresponding image
+                  className={`cursor-pointer mx-1 h-0.5 w-8 ${
+                    index === currentImageIndex
+                      ? "bg-yellow-500"
+                      : "bg-gray-400"
+                  }`}
+                ></span>
+              ))}
             </div>
           </div>
-          <div>dsf</div>
         </div>
 
         {/* Address and Details Section */}
