@@ -20,8 +20,8 @@ const Card = () => {
   };
 
   const prevImage = () => {
-    setCurrentImageIndex((prevIndex) =>
-      (prevIndex - 1 + images.length) % images.length
+    setCurrentImageIndex(
+      (prevIndex) => (prevIndex - 1 + images.length) % images.length
     );
   };
 
@@ -66,13 +66,16 @@ const Card = () => {
         </div>
 
         {/* Circular Progress Bar and Price */}
-        <div className="absolute bottom-16 left-8 flex justify-between w-full"> 
+        <div className="absolute bottom-20 mx-8 flex justify-between w-[90%]">
           <SquareProgressBar percentage={23} />
-          <div className="ml-4 text-white">
+          <div className="flex gap-8 ml-4 text-white">
             <p className="text-[18px]">£5,000,000 GBP</p>
-            <p className="text-[16px] font-semibold">Sotheby's</p>
-            <p className="text-[10px]">INTERNATIONAL REALTY</p>
+            <div>
+              <p className="text-[16px] font-semibold">Sotheby's</p>
+              <p className="text-[10px]">INTERNATIONAL REALTY</p>
+            </div>
           </div>
+          <div>dsf</div>
         </div>
 
         {/* Address and Details Section */}
@@ -92,7 +95,7 @@ const Card = () => {
       <div className="flex justify-between p-4 bg-gray-900 rounded-b-2xl mt-2">
         <p className="text-lg font-semibold">£25.00 GBP</p>
         <div>
-          <button className="font-semibold tracking-widest shadow hover:bg-yellow-400 px-4 py-2 rounded-lg">
+          <button className="font-semibold tracking-widest rounded-lg">
             BUY ENTRY NOW
           </button>
           <p className="text-end text-[9px] tracking-wider">#ZM7861234567</p>

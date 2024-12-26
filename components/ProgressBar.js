@@ -49,7 +49,7 @@ function SquareProgressBar({ percentage }) {
         style={{
           top: 0,
           left: 0,
-          right: 460,
+          right: 410,
           bottom: 0,
         }}
       >
