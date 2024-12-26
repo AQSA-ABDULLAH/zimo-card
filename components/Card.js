@@ -35,7 +35,7 @@ const Card = () => {
             backgroundImage: `url(${images[currentImageIndex]})`,
             backgroundColor: "#ccc",
             boxShadow:
-              "inset 0px 90px 80px -38px rgba(0, 0, 0, 0.8), inset 0px -90px 80px -38px rgba(0, 0, 0, 0.9)",
+              "inset 0px 90px 80px -38px rgba(0, 0, 0, 0.8), inset 0px -90px 60px -35px rgba(0, 0, 0, 0.9)",
           }}
         >
           {/* Overlay */}
