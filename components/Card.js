@@ -1,4 +1,4 @@
-"use client"; // Add this directive to make Card a client component
+"use client";
 
 import dynamic from "next/dynamic";
 import React, { useState } from "react";
