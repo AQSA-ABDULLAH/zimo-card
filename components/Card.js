@@ -6,8 +6,8 @@ import React, { useState } from "react";
 const Timer = dynamic(() => import("./Timer"), { ssr: false });
 
 const images = [
-  "/assets/Rectangle.png",  // Check if this image exists in the public/assets folder
-  "/assets/Rectangle193.png",   // Add more image URLs here
+  "/assets/Rectangle.png", // Check if this image exists in the public/assets folder
+  "/assets/Rectangle193.png", // Add more image URLs here
   "/assets/Rectangle.png", // Check if this image exists as well
 ];
 
@@ -35,10 +35,12 @@ const Card = () => {
       <div className="relative rounded-t-2xl overflow-hidden shadow-lg">
         {/* Background Image Carousel */}
         <div
-          className="h-[500px] bg-cover bg-center"
+          className="h-[500px] bg-cover bg-center relative"
           style={{
             backgroundImage: `url(${images[currentImageIndex]})`, // Check if this is applying correctly
-            backgroundColor: '#ccc', // Default background color for debugging
+            backgroundColor: "#ccc", // Default background color for debugging
+            boxShadow:
+              "inset 0px 55px 80px -35px rgba(0, 0, 0, 4), inset 0px -55px 80px -38px rgba(0, 0, 0, 4)",
           }}
         >
           {/* Overlay */}
@@ -48,18 +50,18 @@ const Card = () => {
         {/* Navigation Buttons */}
         <div className="absolute top-1/2 left-4 transform -translate-y-1/2">
           <button
-            className="bg-gray-700 p-2 rounded-full text-white"
+            className="rounded-full text-white"
             onClick={prevImage}
           >
-            &lt;
+             <img src="/assets/Path2.png" alt="previous-button" />
           </button>
         </div>
         <div className="absolute top-1/2 right-4 transform -translate-y-1/2">
           <button
-            className="bg-gray-700 p-2 rounded-full text-white"
+            className="rounded-full text-white"
             onClick={nextImage}
           >
-            &gt;
+             <img src="/assets/Path1.png" alt="previous-button" />
           </button>
         </div>
 
@@ -87,7 +89,7 @@ const Card = () => {
       </div>
 
       {/* Buttons */}
-      <div className="flex justify-between p-4 bg-gray-900 rounded-b-2xl">
+      <div className="flex justify-between p-4 bg-gray-900 rounded-b-2xl mt-2">
         <p className="text-lg font-semibold ">£25.00 GBP</p>
         <div>
           <button className="font-semibold tracking-widest shadow hover:bg-yellow-400">
@@ -101,6 +103,3 @@ const Card = () => {
 };
 
 export default Card;
-
-
-
