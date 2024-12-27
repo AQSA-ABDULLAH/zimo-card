@@ -33,7 +33,7 @@ function SquareProgressBar({ percentage }) {
           width={innerSize}
           height={innerSize}
           fill="none"
-          stroke="#22c55e" // Green progress
+          stroke="#BE9F56" // Green progress
           strokeWidth={stroke}
           strokeDasharray={`${progress} ${4 * innerSize}`} // Total perimeter
           strokeDashoffset={4 * innerSize - progress} // Offset for progress

@@ -47,12 +47,12 @@ const Card = () => {
         </div>
 
         {/* Navigation Buttons */}
-        <div className="absolute top-1/2 left-4 transform -translate-y-1/2">
+        <div className="absolute top-1/2 left-6 transform -translate-y-1/2">
           <button className="rounded-full text-white" onClick={prevImage}>
             <img src="/assets/Path2.png" alt="previous-button" />
           </button>
         </div>
-        <div className="absolute top-1/2 right-4 transform -translate-y-1/2">
+        <div className="absolute top-1/2 right-6 transform -translate-y-1/2">
           <button className="rounded-full text-white" onClick={nextImage}>
             <img src="/assets/Path1.png" alt="next-button" />
           </button>
@@ -62,7 +62,7 @@ const Card = () => {
         <Timer />
 
         {/* Share And Like */}
-        <div className="absolute top-28 right-8">
+        <div className="absolute top-28 right-6">
           <button className="mr-3">
             <img src="/assets/Path 7830.png" alt="share-icon" />
           </button>
@@ -70,15 +70,14 @@ const Card = () => {
         </div>
 
         {/* Circular Progress Bar and Price */}
-        {/* Circular Progress Bar and Price */}
-        <div className="absolute bottom-20 left-6 flex justify-between w-[90%]">
+        <div className="absolute bottom-20 flex justify-between w-[100%] px-6">
           <SquareProgressBar percentage={23} />
           <div className="flex flex-col">
             <div className="flex justify-between text-white">
-              <p className="text-[18px]">£5,000,000 GBP</p>
+              <p className="text-[14px]">£5,000,000 GBP</p>
               <div>
-                <p className="text-[16px] font-semibold">Sotheby's</p>
-                <p className="text-[7px]">INTERNATIONAL REALTY</p>
+                <p className="text-[16px] font-semibold tracking-wider px-1">Sotheby's</p>
+                <p className="text-[6px] px-1 tracking-widest">INTERNATIONAL REALTY</p>
               </div>
             </div>
 
@@ -100,20 +99,20 @@ const Card = () => {
         </div>
 
         {/* Address and Details Section */}
-        <div className="absolute w-[90%] bottom-2 right-4">
-          <div className="flex justify-between text-[14px]">
+        <div className="absolute w-[100%] px-6 bottom-2">
+          <div className="flex justify-between font-lato text-[11px] uppercase">
             <p>Shelton Street</p>
             <p>Covent Garden</p>
             <p>London</p>
             <p>WC2H</p>
             <p>United Kingdom</p>
           </div>
-          <p className="text-end text-sm mt-2">#ZM7861234567</p>
+          <p className="text-end text-[8px] tracking-wide mt-1">#ZM7861234567</p>
         </div>
       </div>
 
       {/* Buy Entry Section */}
-      <div className="flex justify-between h-[51.25px] items-center px-4 bg-gray-900 tracking-widest rounded-b-2xl mt-2 font-lato text-[16px]">
+      <div className="flex justify-between h-[54px] items-center px-6 bg-gray-900 tracking-widest rounded-b-2xl mt-2 font-lato text-[16px]">
         <p>£25.00 GBP</p>
         <div> 
           <button>

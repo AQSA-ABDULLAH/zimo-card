@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 
 function Timer() {
-  const targetDate = new Date("2024-12-31T00:00:00Z"); // Set your target date here
+  const targetDate = new Date("2024-12-31T00:00:00Z"); 
 
   const calculateTimeLeft = () => {
     const now = new Date();
@@ -38,23 +38,23 @@ function Timer() {
   }, []);
 
   return (
-    <div className="absolute w-[90%] top-2 left-7">
-      <div className="flex justify-between items-center text-[50px] font-extralight">
+    <div className="absolute w-[100%] top-2 px-6">
+      <div className="flex justify-between items-center text-[45px] font-thin tracking-wide">
         <div className="flex flex-col items-center">
-          <span>{timeLeft.days}</span>
-          <p className="text-sm font-normal uppercase">Days</p>
+          <p>{timeLeft.days}</p>
+          <p className="text-sm font-normal uppercase opacity-60 ">Days</p>
         </div>
         <div className="flex flex-col items-center">
           <span>{timeLeft.hours}</span>
-          <p className="text-sm font-normal uppercase">Hours</p>
+          <p className="text-sm font-normal uppercase opacity-60">Hours</p>
         </div>
         <div className="flex flex-col items-center">
           <span>{timeLeft.minutes}</span>
-          <p className="text-sm font-normal uppercase">Minutes</p>
+          <p className="text-sm font-normal uppercase opacity-60">Minutes</p>
         </div>
         <div className="flex flex-col items-center">
           <span>{timeLeft.seconds}</span>
-          <p className="text-sm font-normal uppercase">Seconds</p>
+          <p className="text-sm font-normal uppercase opacity-60">Seconds</p>
         </div>
       </div>
     </div>
