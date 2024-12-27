@@ -1,10 +1,10 @@
 import React from "react";
 
 function SquareProgressBar({ percentage }) {
-  const size = 48; // Size of the square
-  const stroke = 6; // Stroke width
+  const size = 42; // Size of the square
+  const stroke = 5; // Stroke width
   const innerSize = size - stroke; // Inner size considering the stroke
-  const progress = (percentage / 100) * 11.6 * innerSize; // Total length of the progress bar
+  const progress = (24 / 100) * 11 * innerSize; // Total length of the progress bar
 
   return (
     <div className="flex justify-center items-center">
@@ -49,7 +49,7 @@ function SquareProgressBar({ percentage }) {
         style={{
           top: 0,
           left: 0,
-          right: 350,
+          right: 355,
           bottom: 0,
         }}
       >

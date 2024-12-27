@@ -14,6 +14,9 @@ export default {
       fontFamily: {
         lato: ["Lato", "sans-serif"],
       },
+      colors: {
+        gold: "#BE9F56", // Custom color name (e.g., gold)
+      },
     },
   },
   plugins: [],
