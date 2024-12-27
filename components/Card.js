@@ -130,7 +130,7 @@ const Card = () => {
       </div>
 
       {/* Buy Entry Section */}
-      <div className="h-[54px] bg-gray-900 tracking-widest rounded-b-2xl mt-2 font-lato text-[16px]">
+      <div className="h-[54px] bg-black tracking-widest rounded-b-2xl mt-2 font-lato text-[16px]">
         <div className="flex justify-between pt-4 px-6">
           <p>£25.00 GBP</p>
           <button>BUY ENTRY NOW</button>
