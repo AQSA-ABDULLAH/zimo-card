@@ -49,11 +49,11 @@ function SquareProgressBar({ percentage }) {
         style={{
           top: 0,
           left: 0,
-          right: 410,
+          right: 350,
           bottom: 0,
         }}
       >
-        <span className="text-[12px] font-semibold">{percentage}%</span>
+        <span className="text-[9px] font-semibold">{percentage}%</span>
       </div>
     </div>
   );

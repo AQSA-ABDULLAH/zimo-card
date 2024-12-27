@@ -30,11 +30,11 @@ const Card = () => {
   };
 
   return (
-    <div className="text-white bg-white w-full max-w-lg">
+    <div className="text-white bg-white w-full max-w-[450px]">
       <div className="relative rounded-t-2xl overflow-hidden shadow-lg">
         {/* Background Image Carousel */}
         <div
-          className="h-[500px] bg-cover bg-center relative"
+          className="h-[450px] bg-cover bg-center relative"
           style={{
             backgroundImage: `url(${images[currentImageIndex]})`,
             backgroundColor: "#ccc",
@@ -76,8 +76,12 @@ const Card = () => {
             <div className="flex justify-between text-white">
               <p className="text-[14px]">£5,000,000 GBP</p>
               <div>
-                <p className="text-[16px] font-semibold tracking-wider px-1">Sotheby's</p>
-                <p className="text-[6px] px-1 tracking-widest">INTERNATIONAL REALTY</p>
+                <p className="text-[16px] font-semibold tracking-wider px-1">
+                  Sotheby's
+                </p>
+                <p className="text-[6px] px-1 tracking-widest">
+                  INTERNATIONAL REALTY
+                </p>
               </div>
             </div>
 
@@ -100,7 +104,7 @@ const Card = () => {
 
         {/* Address and Details Section */}
         <div className="absolute w-[100%] px-6 bottom-2 tracking-wider">
-          <div className="flex justify-between font-lato text-[11px] uppercase">
+          <div className="flex justify-between font-lato text-[9px] uppercase">
             <p>Shelton Street</p>
             <p>Covent Garden</p>
             <p>London</p>
@@ -112,14 +116,12 @@ const Card = () => {
       </div>
 
       {/* Buy Entry Section */}
-      <div className="flex justify-between h-[54px] items-center px-6 bg-gray-900 tracking-widest rounded-b-2xl mt-2 font-lato text-[16px]">
-        <p>£25.00 GBP</p>
-        <div> 
-          <button>
-            BUY ENTRY NOW
-          </button>
-          <p className="text-end text-[7px]">#ZM7861234567</p>
+      <div className="h-[54px] px-6 bg-gray-900 tracking-widest rounded-b-2xl mt-2 font-lato text-[16px]">
+        <div className="flex justify-between pt-4">
+          <p>£25.00 GBP</p>
+          <button>BUY ENTRY NOW</button>
         </div>
+        <p className="text-end text-[7px]">#ZM7861234567</p>
       </div>
     </div>
   );
