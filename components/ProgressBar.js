@@ -60,7 +60,3 @@ function SquareProgressBar({ percentage }) {
 }
 
 export default SquareProgressBar;
-
-
-
-

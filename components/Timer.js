@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState, useEffect } from "react";
 
 function Timer() {
@@ -10,18 +10,20 @@ function Timer() {
 
     if (difference <= 0) {
       return {
-        days: 0,
-        hours: 0,
-        minutes: 0,
-        seconds: 0,
+        days: "00",
+        hours: "00",
+        minutes: "00",
+        seconds: "00",
       };
     }
 
+    const formatNumber = (num) => String(num).padStart(2, "0");
+
     return {
-      days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-      hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-      minutes: Math.floor((difference / 1000 / 60) % 60),
-      seconds: Math.floor((difference / 1000) % 60),
+      days: formatNumber(Math.floor(difference / (1000 * 60 * 60 * 24))),
+      hours: formatNumber(Math.floor((difference / (1000 * 60 * 60)) % 24)),
+      minutes: formatNumber(Math.floor((difference / 1000 / 60) % 60)),
+      seconds: formatNumber(Math.floor((difference / 1000) % 60)),
     };
   };
 
@@ -37,7 +39,7 @@ function Timer() {
 
   return (
     <div className="absolute w-[90%] top-2 left-7">
-    <div className="flex justify-between items-center text-[50px] font-extralight">
+      <div className="flex justify-between items-center text-[50px] font-extralight">
         <div className="flex flex-col items-center">
           <span>{timeLeft.days}</span>
           <p className="text-sm font-normal uppercase">Days</p>
@@ -60,4 +62,5 @@ function Timer() {
 }
 
 export default Timer;
+
 
