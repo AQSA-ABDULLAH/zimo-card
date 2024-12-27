@@ -4,7 +4,7 @@ function SquareProgressBar({ percentage }) {
   const size = 48; // Size of the square
   const stroke = 6; // Stroke width
   const innerSize = size - stroke; // Inner size considering the stroke
-  const progress = (percentage / 100) * 12 * innerSize; // Total length of the progress bar
+  const progress = (percentage / 100) * 11.6 * innerSize; // Total length of the progress bar
 
   return (
     <div className="flex justify-center items-center">
