@@ -45,13 +45,7 @@ function SquareProgressBar({ percentage }) {
 
       {/* Centered Percentage Text */}
       <div
-        className="absolute flex justify-center items-center"
-        style={{
-          top: 0,
-          left: 0,
-          right: 355,
-          bottom: 0,
-        }}
+        className="absolute flex justify-center items-center md:right-355"
       >
         <span className="text-[9px] font-semibold">{percentage}%</span>
       </div>
