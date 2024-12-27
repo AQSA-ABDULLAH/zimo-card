@@ -99,7 +99,7 @@ const Card = () => {
         </div>
 
         {/* Address and Details Section */}
-        <div className="absolute w-[100%] px-6 bottom-2">
+        <div className="absolute w-[100%] px-6 bottom-2 tracking-wider">
           <div className="flex justify-between font-lato text-[11px] uppercase">
             <p>Shelton Street</p>
             <p>Covent Garden</p>
@@ -107,7 +107,7 @@ const Card = () => {
             <p>WC2H</p>
             <p>United Kingdom</p>
           </div>
-          <p className="text-end text-[8px] tracking-wide mt-1">#ZM7861234567</p>
+          <p className="text-end text-[8px] mt-1">#ZM7861234567</p>
         </div>
       </div>
 

@@ -38,23 +38,23 @@ function Timer() {
   }, []);
 
   return (
-    <div className="absolute w-[100%] top-2 px-6">
+    <div className="absolute w-[100%] top-3 px-6">
       <div className="flex justify-between items-center text-[45px] font-thin tracking-wider">
         <div className="flex flex-col items-center">
           <p>{timeLeft.days}</p>
-          <p className="text-sm font-normal uppercase opacity-60 ">Days</p>
+          <p className="text-[12px] font-extralight uppercase opacity-60 ">Days</p>
         </div>
         <div className="flex flex-col items-center">
           <span>{timeLeft.hours}</span>
-          <p className="text-sm font-normal uppercase opacity-60">Hours</p>
+          <p className="text-[12px] uppercase opacity-60">Hours</p>
         </div>
         <div className="flex flex-col items-center">
           <span>{timeLeft.minutes}</span>
-          <p className="text-sm font-normal uppercase opacity-60">Minutes</p>
+          <p className="text-[12px] font-normal uppercase opacity-60">Minutes</p>
         </div>
         <div className="flex flex-col items-center">
           <span>{timeLeft.seconds}</span>
-          <p className="text-sm font-normal uppercase opacity-60">Seconds</p>
+          <p className="text-[12px] font-normal uppercase opacity-60">Seconds</p>
         </div>
       </div>
     </div>
