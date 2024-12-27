@@ -113,13 +113,13 @@ const Card = () => {
       </div>
 
       {/* Buy Entry Section */}
-      <div className="flex justify-between p-4 bg-gray-900 rounded-b-2xl mt-2">
-        <p className="text-lg font-semibold">£25.00 GBP</p>
-        <div>
-          <button className="font-semibold tracking-widest rounded-lg">
+      <div className="flex justify-between h-[51.25px] items-center px-4 bg-gray-900 tracking-widest rounded-b-2xl mt-2 font-lato text-[16px]">
+        <p>£25.00 GBP</p>
+        <div> 
+          <button>
             BUY ENTRY NOW
           </button>
-          <p className="text-end text-[9px] tracking-wider">#ZM7861234567</p>
+          <p className="text-end text-[7px]">#ZM7861234567</p>
         </div>
       </div>
     </div>
